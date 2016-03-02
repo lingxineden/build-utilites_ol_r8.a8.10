@@ -1,0 +1,8 @@
+updates/net/wireless/cfg80211.ko: updates/compat/compat.ko
+updates/net/mac80211/mac80211.ko: updates/net/wireless/cfg80211.ko updates/compat/compat.ko
+updates/drivers/net/wireless/ti/wlcore/wlcore_sdio.ko: updates/compat/compat.ko
+updates/drivers/net/wireless/ti/wlcore/wlcore.ko: updates/net/mac80211/mac80211.ko updates/net/wireless/cfg80211.ko updates/compat/compat.ko
+updates/drivers/net/wireless/ti/wl18xx/wl18xx.ko: updates/drivers/net/wireless/ti/wlcore/wlcore.ko updates/net/mac80211/mac80211.ko updates/net/wireless/cfg80211.ko updates/compat/compat.ko
+updates/compat/compat.ko:
+updates/compat/sch_fq_codel.ko: updates/compat/compat.ko
+updates/compat/sch_codel.ko: updates/compat/compat.ko
